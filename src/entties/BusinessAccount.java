@@ -26,4 +26,9 @@ public class BusinessAccount extends Account{
 		}
 	}
 	
+	@Override
+	public void withDraw(double amount) {
+		super.withDraw(amount);
+		balance -= 2.0 ;
+	}
 }
